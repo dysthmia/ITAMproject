@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background: url(/content/BackG4.jpg) center center/cover;
+    background: url(./content/BackG4.jpg) center center/cover;
     margin: 0 15px 0px 15px;
     padding: 0;
 }
@@ -216,7 +216,7 @@ a:hover {
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background-image: url('/content/uncheked.png');
+    background-image: url('./content/uncheked.png');
     background-size: cover;
     background-position: center;
     top: 13px; 
@@ -227,7 +227,7 @@ ul li.cheked{
     text-decoration: line-through;
 }
 ul li.cheked::before{
-    background-image: url('/content/checked.png');
+    background-image: url('./content/checked.png');
 }
 
 ul li span{
