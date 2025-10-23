@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- подключение шрифта -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Slabo+27px&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9436c63c3d.js" crossorigin="anonymous"></script>
+    <!-- подключение CSS -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>FUB</title>
+</head>
+<body>
+    <!-- шапочка -->
+    
+    <h1 class ="center">FUB!@#*)/></h1>
+    <div class="row">
+        <div class="photo"></div>
+        <div class="BigBox">
+            <div class="column">
+                <div class="block">
+                    <h2>a few words about me and the project:</h2>
+                    <p>My name is Maksim. I'm a first-year student at NUST MISIS, and this is my first project. I decided to combine different mini apps into one web page, and in the future I'll be adding new ones or improving on the old ones. You won't see any particularly cool designs; I believe beauty lies in simplicity.This project is a combination of practical utilities - a to-do list, a weather forecast, and other cool things.))</p>
+                </div> 
+                <div class="block">
+                    <h2>so there is my contacts:</h2>
+                    <p>If you're interested, you can write me on
+                        <i class="fa-brands fa-telegram"></i><a href="https://t.me/enfantpunk" target="_blank">enfantpunk</a>
+                    <br>My other works can be found here:<i class="fa-brands fa-github"></i><a href="https://github.com/dysthmia" target="_blank">dysthmia</a></p>
+                </div>  
+            </div>  
+        </div>
+    </div>
+    <!-- основные приложения -->
+    <div class="row">
+        <!-- to-do list -->
+        <div class="miniApp">
+            <h2>to-do list</h2>
+            <div class="row2">
+                <input type="text" id="input-box" placeholder="maybe your mother's birhday...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="cheked">Task1</li>
+                <li>Task2</li>
+                <li>Task3</li> -->
+            </ul>
+        </div>
+        <div class="miniApp">
+            <h2>calculator</h2>
+            <form>
+                <div class="newInput">
+                    <input type="text" name="display" placeholder="1505">
+                </div>
+                <div class="row3">
+                    <input class="superbutton" type="button" value="AC" onclick="display.value ='' ">
+                    <input class="superbutton" type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input class="superbutton" type="button" value="." onclick="display.value +='.' ">
+                    <input class="superbutton" type="button" value="/" onclick="display.value +='/' ">
+                </div>
+                <div class="row3">
+                    <input class="defaultbutton" type="button" value="7" onclick="display.value +='7' ">
+                    <input class="defaultbutton" type="button" value="8" onclick="display.value +='8' ">
+                    <input class="defaultbutton" type="button" value="9" onclick="display.value +='9' ">
+                    <input class="superbutton" type="button" value="*" onclick="display.value +='*' ">
+                </div>
+                <div class="row3">
+                    <input class="defaultbutton" type="button" value="4" onclick="display.value +='4' ">
+                    <input class="defaultbutton" type="button" value="5" onclick="display.value +='5' ">
+                    <input class="defaultbutton" type="button" value="6" onclick="display.value +='6' ">
+                    <input class="superbutton" type="button" value="-" onclick="display.value +='-' ">
+                </div>
+                <div class="row3">
+                    <input class="defaultbutton" type="button" value="1" onclick="display.value +='1' ">
+                    <input class="defaultbutton" type="button" value="2" onclick="display.value +='2' ">
+                    <input class="defaultbutton" type="button" value="3" onclick="display.value +='3' ">
+                    <input class="superbutton" type="button" value="+" onclick="display.value +='+' ">
+                </div>
+                <div class="row3">
+                    <input class="pussy" type="button" value="00" onclick="display.value +='00' ">
+                    <input class="pussy" type="button" value="0" onclick="display.value +='0' ">
+                    <input class="equal" type="button" value="=" onclick="display.value=eval(display.value)">
+                </div>
+
+
+            </form>
+        </div>
+        <div class="miniApp">
+            <h2>weather</h2>
+            <div class="row888">
+                <input type="text" placeholder="miami or st. petersburg" spellcheck="false">
+                <button><img src="/content/search.png"></button>
+            </div>
+            <div class="weather">
+                <img src="/content/rain.png" class="weather-icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city-name">Type your city</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="/content/hum.png">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p> humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="/content/wind.png">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p> wind speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripsts/script.js"></script>
+    <script>
+        searchBtn.addEventListener("click",()=>{
+            checkWeather(searchBox.value);
+        })
+    </script>
+</body>
+</html>
