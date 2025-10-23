@@ -79,11 +79,17 @@ async function checkWeather(city) {
     else if(data.weather[0].main == "Mist"){
         weatherIcon.src="content/mist.png"
     }
-
 }
-searchBtn.addEventListener("keydown", function(event) {
+
+// Исправленная обработка нажатия Enter для поиска погоды
+searchBox.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-        event.preventDefault(); // Предотвращаем перенос строки
-        addTask();
+        event.preventDefault();
+        checkWeather(searchBox.value);
     }
+});
+
+// Обработка клика на кнопку поиска
+searchBtn.addEventListener("click", function() {
+    checkWeather(searchBox.value);
 });

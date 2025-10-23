@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Slabo+27px&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9436c63c3d.js" crossorigin="anonymous"></script>
     <!-- подключение CSS -->
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
     
     <title>FUB</title>
 </head>
@@ -85,30 +85,28 @@
                     <input class="pussy" type="button" value="0" onclick="display.value +='0' ">
                     <input class="equal" type="button" value="=" onclick="display.value=eval(display.value)">
                 </div>
-
-
             </form>
         </div>
         <div class="miniApp">
             <h2>weather</h2>
             <div class="row888">
                 <input type="text" placeholder="miami or st. petersburg" spellcheck="false">
-                <button><img src="./content/search.png"></button>
+                <button><img src="/content/search.png"></button>
             </div>
             <div class="weather">
-                <img src="./content/rain.png" class="weather-icon">
+                <img src="/content/rain.png" class="weather-icon">
                 <h1 class="temp">22°C</h1>
                 <h2 class="city-name">Type your city</h2>
                 <div class="details">
                     <div class="col">
-                        <img src="./content/hum.png">
+                        <img src="/content/hum.png">
                         <div>
                             <p class="humidity">50%</p>
                             <p> humidity</p>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="./content/wind.png">
+                        <img src="/content/wind.png">
                         <div>
                             <p class="wind">15 km/h</p>
                             <p> wind speed</p>
@@ -118,7 +116,7 @@
             </div>
         </div>
     </div>
-    <script src="./scripsts/script.js"></script>
+    <script src="/scripsts/script.js"></script>
     <script>
         searchBtn.addEventListener("click",()=>{
             checkWeather(searchBox.value);
