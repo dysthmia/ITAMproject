@@ -1,6 +1,4 @@
-/* Подключаем reset.css первым, затем этот файл */
 
-/* Ваши кастомные стили после reset */
 * {
     color: #c9d1c8; 
     font-family: "Roboto", sans-serif;
@@ -88,7 +86,7 @@ a:hover {
 .column {
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
+    
 }
 
 .row {
@@ -98,7 +96,7 @@ a:hover {
     align-items: flex-start; /* Выравниваем по вертикали */
     gap: 15px;
     margin: 0px 0px;
-    /* flex-wrap: wrap; На мобильных будет перенос */
+    
 }
 
 /* Стили для иконок */
@@ -159,8 +157,6 @@ a:hover {
 
 .row2{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
     gap: 10px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -175,6 +171,7 @@ a:hover {
     background: transparent;
     padding: 10px;
     font-size: 20px;
+
 }
 
 .row2 button{
@@ -204,10 +201,12 @@ a:hover {
     position: relative;
     margin-left: -40px;
     text-align: start;
+    word-break: break-all;
     
 }
 .miniApp li{
     margin-bottom: 10px;
+
     
 }
 .miniApp ul li::before{
@@ -354,9 +353,9 @@ ul li span:hover{
     transition: 0.2s;
 }
 .row888 button img {
-    display: block; /* Убираем лишние отступы */
-    max-width: 100%; /* Ограничиваем размер */
-    height: auto; /* Сохраняем пропорции */
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
 }
 
 .row888 button:hover{
