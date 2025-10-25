@@ -42,6 +42,7 @@
             <h2>to-do list</h2>
             <div class="row2">
                 <input type="text" id="input-box" placeholder="maybe your mother's birhday...">
+                <!-- В конце файла сказал, что не стоит вешать listener в html -->
                 <button onclick="addTask()">Add</button>
             </div>
             <ul id="list-container">
@@ -118,6 +119,9 @@
     </div>
     <script src="./scripsts/script.js"></script>
     <script>
+        // В html не принято добавлять js код и вещать listeners.
+        // Лучше в скрипте находить нужный элемент (по id, по селектору... как угодно)
+        // и уже так вешать обработчик. HTML файл - чисто разметка
         searchBtn.addEventListener("click",()=>{
             checkWeather(searchBox.value);
         })
